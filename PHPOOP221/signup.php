@@ -2,6 +2,7 @@
 require_once('classes/database.php');
 $con = new database();
  
+session_start();
 if(isset($_POST['signup'])){
   $firstname = $_POST['firstname'];
   $lastname = $_POST['lastname'];
@@ -36,6 +37,7 @@ if(isset($_POST['signup'])){
 </head>
 <body>
  
+
 <div class="container-fluid rounded shadow login-container">
   <h2 class="text-center mb-4">Sign-Up</h2>
   <form method="post">
